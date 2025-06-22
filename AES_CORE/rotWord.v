@@ -1,3 +1,4 @@
+// Dich qua trai 1 byte 
 module rotWord(
   input wire [31:0] key_in,
   output wire [31:0] after_rotW

@@ -1,4 +1,4 @@
-// Code your design here
+// Code thiet ke loi thuc hien function ma hoa 
 `include "AES_Cipher_Core.v"
 `include "AES_Key_Expand.v"
 module AES_Cipher(

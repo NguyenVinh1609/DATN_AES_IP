@@ -1,3 +1,4 @@
+// dung bang s-box de tinh gia tri nay 
 // `include"aes_Sbox.v"
 module subWord(
   input wire [31:0] after_rotW,

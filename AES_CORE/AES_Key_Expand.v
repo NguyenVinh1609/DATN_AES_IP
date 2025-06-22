@@ -28,6 +28,7 @@ module AES_Key_Expand(
        key_in=round_key_reg;
     end
   end
+  // trai qua ba phep bien doi 
   rotWord rotW(.key_in(key_in[31:0]),.after_rotW(after_rotW));
   subWord subW(.after_rotW(after_rotW),.after_subW(after_subW));
   Rcon rcon(.round_num(round_num), .after_rcon(after_rcon));

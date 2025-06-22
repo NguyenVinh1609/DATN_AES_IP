@@ -43,7 +43,6 @@ module AES_CORE(
     .rst_n(decipher_rst_n),
     .cipher_text(cipher_text),
     .round_key_10(round_key_10),
-    
     .plain_text(plain_text_out),
     .decipher_ready(decipher_ready)
   );

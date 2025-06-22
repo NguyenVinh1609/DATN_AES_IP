@@ -1,3 +1,4 @@
+//Mixcolumns - nhan ma tran chuyen doi voi ma tran trang thai 
 `include "mixCol.v"
 module mixColumns(
   input wire [127:0] mixColumn_in,

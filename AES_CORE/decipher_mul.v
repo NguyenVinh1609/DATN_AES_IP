@@ -1,3 +1,4 @@
+//tinh cac gia tri mul2 mul4 va mul8 
 `include "mul2.v"
 module decipher_mul(
   input wire [7:0] inv_mixColumns_in,

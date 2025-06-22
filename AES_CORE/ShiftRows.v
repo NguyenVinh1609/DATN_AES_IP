@@ -1,3 +1,4 @@
+// ShiftRows - dich vong qua trai ma tran trang thai 
 module ShiftRows(
   input wire [127:0] after_subBytes,
   output wire [127:0] after_shiftRows

@@ -1,4 +1,4 @@
-// Code cho giai ma 
+// Code cho bo controller dieu khien cac tin hieu cho loi thuc hien chuc nang giai ma 
 module AES_decipher_controller(
   input wire clk,
   input wire rst_n,

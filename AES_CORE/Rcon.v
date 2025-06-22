@@ -1,3 +1,4 @@
+// chuc nang giai ma thi rcon se nguoc so voi ma hoa 
 module Rcon(
   input wire [3:0] round_num,
   output reg [31:0] after_rcon 

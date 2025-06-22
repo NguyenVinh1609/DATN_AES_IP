@@ -1,4 +1,4 @@
-// Code cho thiet ke chuc nang tao khoa vong giai ma 
+// Code cho thiet ke chuc nang tao khoa vong giai ma  
 // `include "rotWord.v"
 `include "InvRcon.v"
 // `include "subWord.v"

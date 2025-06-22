@@ -5,13 +5,13 @@
 /*****************************************************************************/
 #include <stdlib.h>
 #include <stdint.h>
-#include <string.h> // CBC mode, for memset
+#include <string.h> 
 #include "aes.h"
 #include "stdio.h"
 /*****************************************************************************/
 /* Defines:                                                                  */
 /*****************************************************************************/
-// The number of columns comprising a state in AES. This is a constant in AES. Value=4
+// The number of columns comprising a state in AES. 
 #define Nb 4
 // The number of 32 bit words in a key.
 #define Nk 4
@@ -20,9 +20,7 @@
 // The number of rounds in AES Cipher.
 #define Nr 10
 
-// jcallan@github points out that declaring Multiply as a function
-// reduces code size considerably with the Keil ARM compiler.
-// See this link for more information: https://github.com/kokke/tiny-AES128-C/pull/3
+
 #ifndef MULTIPLY_AS_A_FUNCTION
 #define MULTIPLY_AS_A_FUNCTION 0
 #endif
@@ -45,9 +43,7 @@ static const uint8_t *Key;
 static uint8_t *Iv;
 #endif
 
-// The lookup-tables are marked const so they can be placed in read-only storage instead of RAM
-// The numbers below can be computed dynamically trading ROM for RAM -
-// This can be useful in (embedded) bootloader applications, where ROM is often limited.
+
 static const uint8_t sbox[256] = {
     // 0     1    2      3     4    5     6     7      8    9     A      B    C     D     E     F
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76,

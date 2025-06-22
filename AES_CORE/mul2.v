@@ -1,3 +1,4 @@
+// cong thuc de tinh mul2, dich qua trai 1 bit va XOR voi gia trị 0x1b 
 module mul2(
   input wire [7:0] inv_mixColumns_in,
   output wire [7:0] mul2_out

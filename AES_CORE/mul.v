@@ -1,3 +1,4 @@
+// Tinh gia tri mul1 mul2 and mul3 
 module mul(
   input wire [7:0] mul_in,
   output reg [7:0] mul2_out,
@@ -5,6 +6,7 @@ module mul(
 );
   always@(*)	begin 
     if(mul_in[7]==1)	begin
+      
       mul2_out={mul_in[6:0],1'b0}^8'b0001_1011;
     end
     else begin

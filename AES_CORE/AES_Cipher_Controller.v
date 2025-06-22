@@ -1,4 +1,4 @@
-// Code cho bo controller dieu khien cac tin hieu 
+// Code cho bo controller dieu khien cac tin hieu cho loi thuc hien chuc nang ma hoa 
 module AES_controller(
   input wire clk,
   input wire rst_n,

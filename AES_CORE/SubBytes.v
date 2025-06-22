@@ -1,4 +1,4 @@
-// SubByte
+// SubByte - dung bang S-box de thay doi cac byte trong ma trang trang thai 
 `include "aes_Sbox.v"
 
 module SubByte(

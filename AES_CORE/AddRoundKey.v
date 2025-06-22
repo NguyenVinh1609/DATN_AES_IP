@@ -1,5 +1,5 @@
 module AddRoundKey (
-  input wire [127:0] addRoundKey_in,   // plaintext or result of mixcolumn
+  input wire [127:0] addRoundKey_in,   // plaintext hoặc kết quả của mixcolumn
   input wire [127:0] round_key,  // Key cipher or Round key from Key Expand
   output wire [127:0] after_addRoundKey  
 );

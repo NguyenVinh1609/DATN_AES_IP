@@ -1,3 +1,5 @@
+// chuc nang gia ma 
+// Phan loi Decipher Core, thuc hien bien doi AddRoundKey, InvSubbyte, Invshiftrow, InvMixcolumns 
 `include "AES_Decipher_Controller.v"
 `include "AddRoundKey.v"
 `include "InvSubBytes.v"

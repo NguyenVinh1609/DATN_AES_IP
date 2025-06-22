@@ -1,9 +1,11 @@
-// Code your design here
+// chuc nang ma hoa
+// Phan loi Cipher Core, thuc hien bien doi AddRoundKey, Subbyte, shiftrow, Mixcolumns 
 `include "AES_Cipher_Controller.v"
 `include "AddRoundKey.v"
 `include "SubBytes.v"
 `include "ShiftRows.v"
 `include "MixColumns.v"
+// Khoi tao input, output  
 module Cipher_Core(
   input wire clk,
   input wire rst_n,
@@ -36,7 +38,7 @@ module Cipher_Core(
   assign key_in=(begin_round)?cipher_key:round_key;
   assign addRoundKey_in=(begin_round)? plain_text: (cipher_complete)? mixColumn_in: after_mixColumns;
   AddRoundKey addroundkey(.addRoundKey_in(addRoundKey_in),.round_key(key_in),.after_addRoundKey(after_addRoundKey));
-  always@(posedge clk or negedge rst_n)	begin
+  always@(posedge clk or negedge rst_n)	begin // reset khong dong bo, hoat dong muc thap 
     if(!rst_n)	begin
       cipher_text_reg<=128'h0;
     end
@@ -50,7 +52,7 @@ module Cipher_Core(
     end
   end
   //-------------------------------------------------------------------
-  //SubBytes - converts the previous data to the cipher tables's value
+  //SubBytes - su dung bang S-box de thay doi cac byte trong ma trang trang thai
   //-------------------------------------------------------------------
   //generating the SubBytes selection signal
   assign subBytes_sel[127:120]	= cipher_text_reg[127:120];

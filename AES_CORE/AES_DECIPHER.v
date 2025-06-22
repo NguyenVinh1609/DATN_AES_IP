@@ -1,4 +1,4 @@
-// Code your design here
+// code cho thiet ke thuc hien chuc nang giai ma 
 `include "AES_Inv_Key_Expand.v"
 `include "AES_Decipher_Core.v"
 module AES_Decipher(
